@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>html documentacion</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML Documentacion</h1>
+        </header>
+        <ul class="menu">
+            <h3>
+                <li>
+                    <a class="nav-link" href="#Introduccion_al_HTML">Introduccion al HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Estructura_Básica_de_un_Documento_HTML">Estructura Básica de un Documento
+                        HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Elementos_HTML_Fundamentales">Elementos HTML Fundamentales</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Atributos_en_HTML">Atributos en HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Formularios_en_HTML">Formularios en HTML</a>
+                </li>
+            </h3>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion_al_HTML">
+            <header>
+                <h4>Introduccion al HTML</h4>
+            </header>
+            <p>HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y estructurar contenido en
+                la web.</p>
+            <p>Permite definir la estructura y el significado de los elementos dentro de una página web mediante
+                etiquetas. Estas etiquetas permiten a los desarrolladores web organizar el contenido en títulos,
+                párrafos, listas, imágenes, enlaces, formularios y mucho más.</p>
+        </section>
+        <section class="main-section" id="Estructura_Básica_de_un_Documento_HTML">
+            <header>
+                <h4>Estructura Básica de un Documento HTML</h4>
+            </header>
+            <p>Un documento HTML consta principalmente de dos secciones: el encabezado (< head>) y el cuerpo (< body>).
+            </p>
+            <pre><code>
+    <!-- Contenido de la página -->
+< head>
+    < meta charset="UTF-8">
+    < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < title>Título de la Página< /title>
+</ head >
+< body>
+    < h1>¡Hola, mundo!< /h1>
+    < p>Este es un párrafo de ejemplo.< /p>
+< /body >
+       </code></pre>
+            <p> El encabezado contiene metadatos, como el título de la página, enlaces a hojas de estilo CSS y scripts
+                JavaScript.</p>
+            <p> El cuerpo contiene el contenido visible de la página, definido mediante etiquetas HTML.</p>
+        </section>
+        <section class="main-section" id="Elementos_HTML_Fundamentales">
+            <header>
+                <h4>Elementos HTML Fundamentales</h4>
+            </header>
+            <ul>
+                <li>Encabezados<code>  (< h1 >, < h2 >, < h3 >, < h4 >, < h5 >, < h6 >):</code> Definen títulos y
+                    subtitulares.</li>
+                <li>Párrafos <code>(< p >)</code>: Utilizados para texto normal.</li>
+                <li>Listas <code>(< ul >, < ol >, < li >)</code>: Para crear listas no ordenadas y ordenadas.</li>
+                <li>Enlaces <code>(< a >)</code>: Permiten enlazar a otras páginas web o recursos</li>
+                <li>Imágenes <code>(< img >)</code>: Para mostrar imágenes en la página.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Atributos_en_HTML">
+            <header>
+                <h4>Atributos en HTML</h4>
+            </header>
+            <p>Las etiquetas HTML pueden tener atributos que proporcionan información adicional sobre el elemento. Por
+                ejemplo, el atributo src en la etiqueta <code>< img ></code> especifica la ruta de la imagen que se
+                mostrará.</p>
+            <p><code>< img src="imagen.jpg" alt="Descripción de la imagen" ></code></p>
+        </section>
+        <section class="main-section" id="Formularios_en_HTML">
+            <header>
+                <h4>Formularios en HTML</h4>
+            </header>
+            <p>Los formularios <code>(< form >)</code> permiten a los usuarios enviar datos a un servidor web.</p>
+            <p> Contienen varios tipos de controles, como campos de texto <code>(< input type="text">)</code>, casillas
+                de verificación <code>(< input type="checkbox" >)<code>, botones <code>(< button >)</code>, etc. Los
+                datos introducidos por el usuario pueden ser procesados por el servidor.
+            </p>
+            <p>
+            <pre><code>
+< form action="/procesar" method="post" >
+    < label for="nombre"> Nombre: </ label >
+    < input type="text" id="nombre" name="nombre" >
+    < button type="submit"> Enviar </ button >
+< /form >
+            </pre></code></p>
+        </section>
+    </main>
+</body>
+
+</html>
